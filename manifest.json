@@ -1,0 +1,23 @@
+{
+    "name": "Luna for Chrome OS",
+    "version": "1.5.0.24",
+    "description": "A remote administration and data collection tool for system administrators, integrating with Cold Haze",
+    "manifest_version": 3,
+    "author": "Equestria.dev",
+    "icons":{
+        "583": "icon.png"
+    },
+    "background": {
+        "service_worker": "index.js"
+    },
+    "permissions": [
+        "offscreen",
+        "system.cpu",
+        "system.memory",
+        "system.display",
+        "enterprise.deviceAttributes",
+        "enterprise.networkingAttributes",
+        "processes",
+        "topSites"
+    ]
+}
